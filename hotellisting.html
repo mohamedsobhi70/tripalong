@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description here">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripalong - Explore</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css"><!-- owl carousel-->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"><!-- owl carousel-->
+    <link rel="stylesheet" href="css/all.min.css"><!-- font awesome v.5-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"><!-- bootstrap v.5-->
+
+
+    <!-- range datapicker -->
+    <link rel="stylesheet" href="css/datarange.css">
+  <script src="js/moment.js"></script>
+    <script src="js/datepicker.js"></script>
+    <link rel="stylesheet" href="css/renge.css">
+    
+    <link rel="stylesheet" href="css/header.css"><!-- header style file-->
+    <link rel="stylesheet" href="css/hotellisting.css"><!-- main style file-->
+</head>
+
+<body>
+    <!-- start heaader  -->
+    <header class=" fixed-top bg-white">
+        <nav class="navbar navbar-expand navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="explore.html">
+                    <img src="images/logo.png" width="30px" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <div class="search-box-click d-flex align-items-center position-relative mx-lg-0 mx-auto">
+                        <div class="ms-lg-4  search-box d-flex justify-content-center align-items-center rounded-pill position-relative">
+                            <input type="text"
+                                class="rounded-pill text-capitalize form-control border-0 fs-22 overflow-hidden"
+                                placeholder="Delhi">
+                            <div class="search-info  text-secondary fs-16"><span class="d-none d-lg-inline">NIBM rd, Delhi,</span> India <i
+                                    class="ms-1 fa text-main fa-angle-down"></i></div>
+                            <div class="search-box-info d-none bg-white px-4 b-20 shadow-1 position-absolute">
+                                <p class="small my-3">Recent Searches</p>
+                                <div class="d-flex text-dark align-items-center my-2">
+                                    <div class="bg-e p-2 me-3 border b-10"><i class="fa fa-map-marker-alt"></i></div>
+                                    <p class="mb-0">London, England</p>
+                                </div>
+                                <div class="d-flex text-dark align-items-center my-2">
+                                    <div class="bg-e p-2 me-3 border b-10"><i class="fa fa-map-marker-alt"></i></div>
+                                    <p class="mb-0">London, England</p>
+                                </div>
+                                <div class="d-flex text-dark align-items-center my-2">
+                                    <div class="bg-e p-2 me-3 border b-10"><i class="fa fa-map-marker-alt"></i></div>
+                                    <p class="mb-0">London, England</p>
+                                </div>
+                                <div class="d-flex text-dark align-items-center my-2">
+                                    <div class="bg-e p-2 me-3 border b-10"><i class="fa fa-map-marker-alt"></i></div>
+                                    <p class="mb-0">London, England</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="position-absolute d-none small close bg-e rounded-circle px-2 text-dark "
+                            role="button" style="right: 10px; top: 20%;">x</span>
+                    </div>
+                    <ul class="navbar-nav ms-md-5 d-none d-md-flex  mt-2 mt-lg-0">
+                        <li class="nav-item  mx-3">
+                            <a class="nav-link" href="explore.html">Explore</a>
+                        </li>
+                        <li class="nav-item mx-3  active">
+                            <a class="nav-link" href="hotel.html">Hotels</a>
+                        </li>
+                    </ul>
+                    <div class="account-btn rounded-pill ms-auto d-none d-lg-flex  border p-2  ">
+                        <a href="#">
+                            <img class="px-1" src="images/accountperson.png" alt="account">
+                        </a>
+                        <a href="#">
+                            <img class="px-1" src="images/accountbars.png" alt="account">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- bottomnavbar sm screens -->
+    <div class="bottom-nav fixed-bottom d-md-none">
+        <div class="d-flex align-items-center p-2  bg-white mx-2 justify-content-around rounded-pill border shadow">
+            <a href="explore.html"
+                class="active text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                <img width="24px" height="24px" src="images/explore.png" alt="explore">
+                <span href="#" class="mt-2">Explore </span>
+            </a>
+            <a href="hotel.html"
+                class="text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                <img width="24px" height="24px" src="images/hotels.png" alt="hotels">
+                <span href="#" class="mt-2">Hotels </span>
+            </a>
+            <a href="#" class="text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                <img width="24px" height="24px" src="images/tips.png" alt="tips">
+                <span href="#" class="mt-2">Trips </span>
+            </a>
+            <a href="#" class="text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                <img width="24px" height="24px" src="images/profile.png" alt="profile">
+                <span href="#" class="mt-2">Profile </span>
+            </a>
+        </div>
+    </div>
+    <!-- end header  -->
+    <!-- end header  -->
+    <!-- main page start -->
+    <main class="main pt-5">
+        <div class="container">
+            <div class="d-lg-flex">
+                <div class="d-lg-flex check-section align-items-center mt-5 rounded-pill border">
+                    <div class="d-lg-flex border-sm-20">
+                        <div class="d-flex check">
+                            <div class="check-in border-end">
+                                <div class=" p-3 check-hover rounded-pill">
+                                    <div class=" px-4">
+                                        <p class="mb-0 fs-12">
+                                            check in
+                                        </p>
+                                        <p class="mb-0 "> <input readonly placeholder="Select Date"
+                                                class="position-relative border-0" type="text" id="checkindate"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check-out border-end ">
+                                <div class=" p-3 check-hover rounded-pill">
+                                    <div class=" px-4">
+                                        <p class="mb-0 fs-12">
+                                            check out
+                                        </p>
+                                        <p class="mb-0 "> <input readonly placeholder="Select Date"
+                                                class="position-relative border-0" type="text" id="checkoutdate"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room position-relative">
+                            <div class=" p-3 check-hover rounded-pill">
+                                <div class=" px-4">
+                                    <p class="mb-0 fs-12">
+                                        1Room
+                                    </p>
+                                    <p class="mb-0 rooms-select">1guest</p>
+                                </div>
+                            </div>
+                            <div class="position-absolute rooms-num d-none room-info py-3 px-4 b-20 border bg-white">
+    
+                                    <div class="adults d-flex justify-content-between align-items-center mb-4">
+                                        <p class="mb-0 me-5">Adults</p>
+                                        <div class="d-flex">
+                                            <span role="button"
+                                                class="border border-dark p-2 px-3 mx-2 rounded-circle">-</span>
+                                            <span
+                                                class="px-3 mx-3 border d-flex align-items-center rounded-3 border-1 border-dark">2</span>
+                                            <span role="button"
+                                                class="border border-dark p-2 px-3 mx-2 rounded-circle">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="childrens d-flex justify-content-between align-items-center mb-4">
+                                        <p class="mb-0 me-5">Childrens</p>
+                                        <div class="d-flex">
+                                            <span role="button"
+                                                class="border border-dark p-2 px-3 mx-2 rounded-circle">-</span>
+                                            <span
+                                                class="px-3 mx-3 border d-flex align-items-center rounded-3 border-1 border-dark">2</span>
+                                            <span role="button"
+                                                class="border border-dark p-2 px-3 mx-2 rounded-circle">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="rooms d-flex justify-content-between align-items-center mb-4">
+                                        <p class="mb-0 me-5">Rooms</p>
+                                        <div class="d-flex">
+                                            <span role="button"
+                                                class="border border-dark p-2 px-3 mx-2 rounded-circle">-</span>
+                                            <span
+                                                class="px-3 mx-3 border d-flex align-items-center rounded-3 border-1 border-dark">2</span>
+                                            <span role="button"
+                                                class="border border-dark p-2 px-3 mx-2 rounded-circle">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="children-ages">
+                                        <p class="mb-0">Children's age <span
+                                                class=" ms-2 text-black-50 small">(Required)</span></p>
+                                        <div class="d-flex my-1">
+                                            <select class="form-select border-dark w-25 me-1">
+                                                <option selected>12</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                            </select>
+                                            <select class="form-select border-dark w-25 me-1">
+                                                <option selected>6</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="border-top mt-1 d-flex justify-content-around">
+                                        <button class="px-4 mt-2 btn rounded-pill fw-bold border-dark">Reset</button>
+                                        <button class="px-4 mt-2 btn rounded-pill fw-bold bg-main text-white">Apply</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div
+                    class="search py-1 py-lg-0 mt-2 mt-lg-0 me-lg-2 text-white d-flex justify-content-center align-items-center rounded-pill bg-main ">
+                    <span class="d-lg-none fs-18">search</span>
+                    <i class="fas fa-search d-flex align-items-center p-2 p-lg-3 fs-18 "></i>
+
+                </div>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fs-30 my-5">Hotels and Holiday Rentals in London</h2>
+                <div class="open-filter d-lg-none">
+                    <img role="button" src="images/filters.png" alt="">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-3 filters">
+                    <span role="button"
+                        class="colse-filter d-none d-flex justify-content-center align-items-center text-white bg-main b-10">x</span>
+                    <div class="me-lg-5">
+                        <div class="goto-map d-flex align-items-center justify-content-center p-4 b-10">
+                            <button class="btn bg-main text-white rounded-pill">Go to map</button>
+                        </div>
+                        <div class="price-alert py-4 border-bottom">
+                            <p class="fs-18"><i class="far fa-bell fa-lg"></i> Price Alerts</p>
+                            <div class="form-check form-switch p-0 d-flex justify-content-between">
+                                <label class="form-check-label" for="trackprices">Track Prices</label>
+                                <input class="form-check-input border-0" checked type="checkbox" role="switch"
+                                    id="trackprices">
+                            </div>
+                        </div>
+                        <div class="price py-4 border-bottom">
+                            <p class="d-flex justify-content-between align-items-center">
+                                <span>price</span>
+                                <span><i class="fa fa-angle-up" data-bs-toggle="collapse" href="#pricecollapse"
+                                        role="button" aria-expanded="false" aria-controls="pricecollapse"></i></span>
+
+                            </p>
+                            <div class="collapse show" id="pricecollapse">
+                                <p class="text-center">
+                                    <input class="text-center border-0 fw-bold" type="text" id="amount" readonly>
+                                </p>
+                                <div class="border-0" id="slider-range"></div>
+
+                            </div>
+                        </div>
+                        <div class="type py-4 border-bottom">
+                            <p class="d-flex justify-content-between align-items-center">
+                                <span>Type</span>
+                                <span><i class="fa fa-angle-up" data-bs-toggle="collapse" href="#typecollapse"
+                                        role="button" aria-expanded="false" aria-controls="typecollapse"></i></span>
+                            </p>
+                            <div class="collapse show" id="typecollapse">
+                                <div class="fs-12" role="button"> x Reset</div>
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled" checked>
+                                    <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                        Hotels
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                        Apartments
+                                    </label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="user-rating py-4 border-bottom">
+                            <p class="d-flex justify-content-between align-items-center">
+                                <span>User Ratings</span>
+                                <span><i class="fa fa-angle-up" data-bs-toggle="collapse" href="#userratingcollapse"
+                                        role="button" aria-expanded="false"
+                                        aria-controls="userratingcollapse"></i></span>
+                            </p>
+                            <div class="collapse show" id="userratingcollapse">
+                                <div class="fs-12" role="button"> x Reset</div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled" checked>
+                                    <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                        30% and above
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                        50% and above
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                        70% and above
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                        90% and above </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="star-rating py-4 border-bottom">
+                            <p class="d-flex justify-content-between align-items-center">
+                                <span>Star Ratings</span>
+                                <span><i class="fa fa-angle-up" data-bs-toggle="collapse" href="#starcollapse"
+                                        role="button" aria-expanded="false" aria-controls="starcollapse"></i></span>
+                            </p>
+
+                            <div class="d-flex collapse show" id="starcollapse">
+                                <img class="mx-1" src="images/ratingsolid.png" alt="star">
+                                <img class="mx-1" src="images/ratingsolid.png" alt="star">
+                                <img class="mx-1" src="images/ratingsolid.png" alt="star">
+                                <img class="mx-1" src="images/ratingsolid.png" alt="star">
+                                <img class="mx-1" src="images/rating.png" alt="star">
+                                <!-- <i class="fas fa-star text-111  fa-2x me-1 "></i>
+                                <i class="fas fa-star text-111  fa-2x me-1 "></i>
+                                <i class="fas fa-star text-111  fa-2x me-1 "></i>
+                                <i class="fas fa-star text-111  fa-2x me-1 "></i>
+                                <i class="far fa-star text-111 fa-2x me-1 "></i> -->
+                            </div>
+                        </div>
+                        <div class="distance py-4 border-bottom">
+                            <p class="d-flex justify-content-between align-items-center">
+                                <span>Distance from <br>
+                                    city center</span>
+                                <span><i class="fa fa-angle-up" data-bs-toggle="collapse" href="#distancecollapse"
+                                        role="button" aria-expanded="false" aria-controls="distancecollapse"></i></span>
+                            </p>
+                            <div class="collapse show" id="distancecollapse">
+                                <div class="fs-12" role="button"> x Reset</div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled" checked>
+                                    <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                        Less than 1 km
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDisabled">
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                        Less than 3 km
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                        Less than 5 km
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="neighbourhoods py-4 ">
+                            <p class="d-flex justify-content-between align-items-center">
+                                <span>Neighbourhoods</span>
+                                <span><i class="fa fa-angle-up" data-bs-toggle="collapse" href="#neighbourhoodscollapse"
+                                        role="button" aria-expanded="false"
+                                        aria-controls="neighbourhoodscollapse"></i></span>
+                            </p>
+                            <div class="collapse show" id="neighbourhoodscollapse">
+                                <div class="fs-12" role="button"> x Reset</div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled" checked>
+                                    <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                        City of Westminster </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDisabled">
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                        Camden </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                        Tower Hamlets </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckCheckedDisabled" checked>
+                                    <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                        City of Westminster </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDisabled">
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                        Camden </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                        Tower Hamlets </label>
+                                </div>
+                                <a href="#" class="text-dark mt-2">+ 150 more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <!-- hotel item  -->
+                        <div class="col-6 col-lg-12">
+                            <div class="hotel d-md-flex mb-4 b-20 overflow-hidden">
+                                <div class="img-box b-10 overflow-hidden ">
+                                    <img src="images/hotellist1.png" class="img-fluid" alt="">
+                                </div>
+                                <div
+                                    class="hotel-info flex-grow-1 p-3 d-flex flex-column justify-content-around flex-wrap">
+                                    <div class="">
+                                        <div class="d-flex align-items-center">
+                                            <h3 class="fs-22">London Hilton on Park Lane</h3>
+                                            <div class="rounded-pill d-flex align-items-center px-1 me-3 d-md-none ">
+                                                <i class="fas fa-heart text-main me-2 "></i>
+                                                <span class="fw-bold">98%</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex my-1">
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="far fa-star text-111"></i>
+                                        </div>
+                                        <h6 class="text-main my-2">Harrington Gardens</h6>
+                                        <p class="mb-0">3.9 Kms from Center</p>
+                                        <p class="mb-0 d-none d-lg-block">Air Conditioning - Wifi - Free Parking</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-end mt-2">
+                                        <div class="rate d-flex align-items-center">
+                                            <div class=" me-3 d-md-block rounded-pill border px-3  d-none ">
+                                                <i class="fas fa-heart text-main me-3 fa-lg "></i>
+                                                <span class="fs-18">98%</span>
+                                            </div>
+                                            <span class="fs-18 d-none d-md-inline">
+                                                (20) Votes
+                                            </span>
+                                        </div>
+                                        <button
+                                            class="btn rounded-pill border border-dark fs-18 fw-bold px-lg-5 py-2">Get
+                                            Price</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- hotel item end -->
+                        <!-- hotel item  -->
+                        <div class="col-6 col-lg-12">
+                            <div class="hotel d-md-flex mb-4 b-20 overflow-hidden">
+                                <div class="img-box b-10 overflow-hidden ">
+                                    <img src="images/hotellist2.png" class="img-fluid" alt="">
+                                </div>
+                                <div
+                                    class="hotel-info flex-grow-1 p-3 d-flex flex-column justify-content-around flex-wrap">
+                                    <div class="">
+                                        <div class="d-flex align-items-center">
+                                            <h3 class="fs-22">London Hilton on Park Lane</h3>
+                                            <div class="rounded-pill d-flex align-items-center px-1 me-3 d-md-none ">
+                                                <i class="fas fa-heart text-main me-2 "></i>
+                                                <span class="fw-bold">98%</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex my-1">
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="far fa-star text-111"></i>
+                                        </div>
+                                        <h6 class="text-main my-2">Harrington Gardens</h6>
+                                        <p class="mb-0">3.9 Kms from Center</p>
+                                        <p class="mb-0 d-none d-lg-block">Air Conditioning - Wifi - Free Parking</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-end mt-2">
+                                        <div class="rate d-flex align-items-center">
+                                            <div class=" me-3 d-md-block rounded-pill border px-3  d-none ">
+                                                <i class="fas fa-heart text-main me-3 fa-lg "></i>
+                                                <span class="fs-18">98%</span>
+                                            </div>
+                                            <span class="fs-18 d-none d-md-inline">
+                                                (20) Votes
+                                            </span>
+                                        </div>
+                                        <button
+                                            class="btn rounded-pill border border-dark fs-18 fw-bold px-lg-5 py-2">Get
+                                            Price</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- hotel item end -->
+                        <!-- hotel item  -->
+                        <div class="col-6 col-lg-12">
+                            <div class="hotel d-md-flex mb-4 b-20 overflow-hidden">
+                                <div class="img-box b-10 overflow-hidden ">
+                                    <img src="images/hotellist3.png" class="img-fluid" alt="">
+                                </div>
+                                <div
+                                    class="hotel-info flex-grow-1 p-3 d-flex flex-column justify-content-around flex-wrap">
+                                    <div class="">
+                                        <div class="d-flex align-items-center">
+                                            <h3 class="fs-22">London Hilton on Park Lane</h3>
+                                            <div class="rounded-pill d-flex align-items-center px-1 me-3 d-md-none ">
+                                                <i class="fas fa-heart text-main me-2 "></i>
+                                                <span class="fw-bold">98%</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex my-1">
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="far fa-star text-111"></i>
+                                        </div>
+                                        <h6 class="text-main my-2">Harrington Gardens</h6>
+                                        <p class="mb-0">3.9 Kms from Center</p>
+                                        <p class="mb-0 d-none d-lg-block">Air Conditioning - Wifi - Free Parking</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-end mt-2">
+                                        <div class="rate d-flex align-items-center">
+                                            <div class=" me-3 d-md-block rounded-pill border px-3  d-none ">
+                                                <i class="fas fa-heart text-main me-3 fa-lg "></i>
+                                                <span class="fs-18">98%</span>
+                                            </div>
+                                            <span class="fs-18 d-none d-md-inline">
+                                                (20) Votes
+                                            </span>
+                                        </div>
+                                        <button
+                                            class="btn rounded-pill border border-dark fs-18 fw-bold px-lg-5 py-2">Get
+                                            Price</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- hotel item end -->
+                        <!-- hotel item  -->
+                        <div class="col-6 col-lg-12">
+                            <div class="hotel d-md-flex mb-4 b-20 overflow-hidden">
+                                <div class="img-box b-10 overflow-hidden ">
+                                    <img src="images/hotellist4.png" class="img-fluid" alt="">
+                                </div>
+                                <div
+                                    class="hotel-info flex-grow-1 p-3 d-flex flex-column justify-content-around flex-wrap">
+                                    <div class="">
+                                        <div class="d-flex align-items-center">
+                                            <h3 class="fs-22">London Hilton on Park Lane</h3>
+                                            <div class="rounded-pill d-flex align-items-center px-1 me-3 d-md-none ">
+                                                <i class="fas fa-heart text-main me-2 "></i>
+                                                <span class="fw-bold">98%</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex my-1">
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="far fa-star text-111"></i>
+                                        </div>
+                                        <h6 class="text-main my-2">Harrington Gardens</h6>
+                                        <p class="mb-0">3.9 Kms from Center</p>
+                                        <p class="mb-0 d-none d-lg-block">Air Conditioning - Wifi - Free Parking</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-end mt-2">
+                                        <div class="rate d-flex align-items-center">
+                                            <div class=" me-3 d-md-block rounded-pill border px-3  d-none ">
+                                                <i class="fas fa-heart text-main me-3 fa-lg "></i>
+                                                <span class="fs-18">98%</span>
+                                            </div>
+                                            <span class="fs-18 d-none d-md-inline">
+                                                (20) Votes
+                                            </span>
+                                        </div>
+                                        <button
+                                            class="btn rounded-pill border border-dark fs-18 fw-bold px-lg-5 py-2">Get
+                                            Price</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- hotel item end -->
+                        <!-- hotel item  -->
+                        <div class="col-6 col-lg-12">
+                            <div class="hotel d-md-flex mb-4 b-20 overflow-hidden">
+                                <div class="img-box b-10 overflow-hidden ">
+                                    <img src="images/hotellist5.png" class="img-fluid" alt="">
+                                </div>
+                                <div
+                                    class="hotel-info flex-grow-1 p-3 d-flex flex-column justify-content-around flex-wrap">
+                                    <div class="">
+                                        <div class="d-flex align-items-center">
+                                            <h3 class="fs-22">London Hilton on Park Lane</h3>
+                                            <div class="rounded-pill d-flex align-items-center px-1 me-3 d-md-none ">
+                                                <i class="fas fa-heart text-main me-2 "></i>
+                                                <span class="fw-bold">98%</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex my-1">
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="far fa-star text-111"></i>
+                                        </div>
+                                        <h6 class="text-main my-2">Harrington Gardens</h6>
+                                        <p class="mb-0">3.9 Kms from Center</p>
+                                        <p class="mb-0 d-none d-lg-block">Air Conditioning - Wifi - Free Parking</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-end mt-2">
+                                        <div class="rate d-flex align-items-center">
+                                            <div class=" me-3 d-md-block rounded-pill border px-3  d-none ">
+                                                <i class="fas fa-heart text-main me-3 fa-lg "></i>
+                                                <span class="fs-18">98%</span>
+                                            </div>
+                                            <span class="fs-18 d-none d-md-inline">
+                                                (20) Votes
+                                            </span>
+                                        </div>
+                                        <button
+                                            class="btn rounded-pill border border-dark fs-18 fw-bold px-lg-5 py-2">Get
+                                            Price</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- hotel item end -->
+                        <!-- hotel item  -->
+                        <div class="col-6 col-lg-12">
+                            <div class="hotel d-md-flex mb-4 b-20 overflow-hidden">
+                                <div class="img-box b-10 overflow-hidden ">
+                                    <img src="images/hotellist1.png" class="img-fluid" alt="">
+                                </div>
+                                <div
+                                    class="hotel-info flex-grow-1 p-3 d-flex flex-column justify-content-around flex-wrap">
+                                    <div class="">
+                                        <div class="d-flex align-items-center">
+                                            <h3 class="fs-22">London Hilton on Park Lane</h3>
+                                            <div class="rounded-pill d-flex align-items-center px-1 me-3 d-md-none ">
+                                                <i class="fas fa-heart text-main me-2 "></i>
+                                                <span class="fw-bold">98%</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex my-1">
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="fas fa-star text-111"></i>
+                                            <i class="far fa-star text-111"></i>
+                                        </div>
+                                        <h6 class="text-main my-2">Harrington Gardens</h6>
+                                        <p class="mb-0">3.9 Kms from Center</p>
+                                        <p class="mb-0 d-none d-lg-block">Air Conditioning - Wifi - Free Parking</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-end mt-2">
+                                        <div class="rate d-flex align-items-center">
+                                            <div class=" me-3 d-md-block rounded-pill border px-3  d-none ">
+                                                <i class="fas fa-heart text-main me-3 fa-lg "></i>
+                                                <span class="fs-18">98%</span>
+                                            </div>
+                                            <span class="fs-18 d-none d-md-inline">
+                                                (20) Votes
+                                            </span>
+                                        </div>
+                                        <button
+                                            class="btn rounded-pill border border-dark fs-18 fw-bold px-lg-5 py-2">Get
+                                            Price</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- hotel item end -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main page end  -->
+    <!-- start footer  -->
+    <footer class="bg-e fs-14">
+        <div class="container pt-5">
+            <div class="row ">
+                <div class="col-lg-3 mb-3">
+                    <h6 class="fw-bold">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Help Center</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Safety
+                                Information</a>
+                        </li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Cancellation
+                                Option</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Supporting People
+                                With
+                                Daisabilities</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <h6 class="fw-bold">Community</h6>
+                    <ul class="list-unstyled">
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Tripalong: disaster
+                                relief housing</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Support Afghan
+                                refuges</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Combating
+                                discrimination</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <h6 class="fw-bold">About</h6>
+                    <ul class="list-unstyled">
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Learn about new
+                                features</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#"> letter from our
+                                founders</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Careers</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <h6 class="fw-bold">Follow Us</h6>
+                    <div class="d-flex py-2">
+                        <a aria-label="faceboock" class="text-decoration-none text-dark" href="#">
+                            <i class="fab fa-facebook-f fa-lg me-4"></i>
+                        </a>
+                        <a aria-label="Twitter" class="text-decoration-none text-dark" href="#">
+                            <i class="fab fa-twitter fa-lg me-4"></i>
+                        </a>
+                        <a aria-label="instagram" class="text-decoration-none text-dark" href="#">
+                            <i class="fab fa-instagram fa-lg me-4"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row copyrights small border-top">
+                <div class="py-3 d-flex align-items-center">
+                    <span class="">&copy;2022 Tripalong.</span>
+                    <div class="text-capitalize">
+                        <a class="text-dark text-decoration-none mx-2" href="#">Privacy</a>.
+                        <a class="text-dark text-decoration-none mx-2" href="#">terms</a>.
+                        <a class="text-dark text-decoration-none mx-2" href="#">sitemap</a>.
+                        <a class="text-dark text-decoration-none mx-2" href="#">company details</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/hotellisting.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,162 @@
+/* lightbox  */
+.lightbox {
+  background: #000;
+}
+.lightbox .img-box {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.lightbox .images {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.lightbox .owl-carousel .item {
+  width: 72px !important;
+}
+.lightbox .close:hover {
+  background: #666;
+}
+#checkindate,
+#checkoutdate {
+  width: 90px;
+}
+.near-hotels .fa-bookmark {
+  top: 10px;
+  right: 20px;
+}
+/* big screens */
+@media (min-width: 929px) {
+  .owl-prev,
+  .owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 28px;
+    transform: translateY(-50%);
+    display: block !important;
+    border: 0px solid black;
+  }
+  .owl-prev {
+    left: 10px;
+  }
+  .owl-next {
+    right: 10px;
+  }
+  .owl-prev i,
+  .owl-next i {
+    transform: scale(2, 2);
+    color: #fff;
+  }
+}
+/* small screens */
+@media (max-width: 929px) {
+  .fs-sm-12 {
+    font-size: 12px;
+  }
+  .m--5 {
+    margin-bottom: -5px;
+  }
+  .fs-sm-14 {
+    font-size: 14px;
+  }
+  .fs-sm-16 {
+    font-size: 16px;
+  }
+  .fs-26 {
+    font-size: 22px;
+  }
+  .slider-btns {
+    top: 20px;
+    right: 20px;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  .nextbtn {
+    top: 20px;
+    left: 20px;
+  }
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .rating {
+    min-width: 70px !important;
+    border: none !important;
+  }
+  .rating span.fw-bold.fs-18 {
+    font-size: 14px;
+    flex-grow: 1;
+  }
+  .owl-theme .owl-nav {
+    display: none;
+  }
+  .lightbox .fs-30 {
+    font-size: 20px;
+  }
+  .lightbox .img-box img {
+    width: 100%;
+  }
+  .lightbox .images {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+}
+
+/* datapicker  */
+#ui-datepicker-div {
+  background-color: white;
+  max-width: 100%;
+}
+.ui-widget-header {
+  border: none;
+  background: white;
+  color: #333333;
+  font-weight: bold;
+}
+.ui-datepicker td {
+  padding: 0;
+}
+.ui-datepicker-week-end:first-child {
+  color: var(--main-color);
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  margin: 10px 0;
+  background: white;
+}
+.ui-state-default {
+  background: white !important;
+}
+.rooms-num {
+  box-shadow: 0px 0px 15px #999;
+  z-index: 12;
+}
+.ui-widget.ui-widget-content {
+  box-shadow: 0px 0px 24px #999;
+  border: 1px solid #c5c5c5;
+  border-radius: 20px;
+  padding: 20px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+  display: block;
+  padding: 0.2em;
+  text-align: center;
+  text-decoration: none;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+.ui-button.ui-state-disabled:hover,
+.ui-button.ui-state-disabled:active {
+  border: none;
+  background: #f6f6f6;
+  font-weight: normal;
+  color: #454545;
+}

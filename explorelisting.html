@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--main style css file-->
+    <meta name="description" content="">
+    <title>Tripalong - Explore page </title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.logo-carousel').slick({
+                slidesToShow: 5,
+                infinite: false,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 100,
+                arrows: true,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }]
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- start heaader  -->
+    <!-- start heaader  -->
+    <header class=" fixed-top bg-white">
+        <nav class="navbar navbar-expand navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="explore.html">
+                    <img src="images/logo.png" width="30px" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <div class="search-box-click d-flex align-items-center position-relative mx-lg-0 mx-auto">
+                        <div
+                            class="ms-lg-4  search-box d-flex justify-content-center align-items-center rounded-pill position-relative">
+                            <input type="text"
+                                class="rounded-pill text-capitalize form-control border-0 fs-22 overflow-hidden"
+                                placeholder="Delhi">
+                            <div class="search-info  text-secondary fs-16"><span class="d-none d-lg-inline">NIBM rd,
+                                    Delhi,</span> India <i class="ms-1 fa text-main fa-angle-down"></i></div>
+                            <div class="search-box-info d-none bg-white px-4 b-20 shadow-1 position-absolute">
+                                <p class="small my-3">Recent Searches</p>
+                                <div class="d-flex text-dark align-items-center my-2">
+                                    <div class="bg-e p-2 me-3 border b-10"><i class="fa fa-map-marker-alt "></i></div>
+                                    <p class="mb-0">London, England</p>
+                                </div>
+                                <div class="d-flex text-dark align-items-center my-2">
+                                    <div class="bg-e p-2 me-3 border b-10"><i class="fa fa-map-marker-alt "></i></div>
+                                    <p class="mb-0">London, England</p>
+                                </div>
+                                <div class="d-flex text-dark align-items-center my-2">
+                                    <div class="bg-e p-2 me-3 border b-10"><i class="fa fa-map-marker-alt "></i></div>
+                                    <p class="mb-0">London, England</p>
+                                </div>
+                                <div class="d-flex text-dark align-items-center my-2">
+                                    <div class="bg-e p-2 me-3 border b-10"><i class="fa fa-map-marker-alt "></i></div>
+                                    <p class="mb-0">London, England</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="position-absolute d-none small close bg-e rounded-circle px-2 text-dark "
+                            role="button" style="right: 10px; top: 20%;">x</span>
+                    </div>
+                    <ul class="navbar-nav ms-md-5 d-none d-md-flex  mt-2 mt-lg-0">
+                        <li class="nav-item  mx-3 active">
+                            <a class="nav-link" href="explore.html">Explore</a>
+                        </li>
+                        <li class="nav-item mx-3 ">
+                            <a class="nav-link" href="hotel.html">Hotels</a>
+                        </li>
+                    </ul>
+                    <div class="account-btn rounded-pill ms-auto d-none d-lg-flex  border p-2  ">
+                        <a href="#">
+                            <img class="px-1" src="images/accountperson.png" alt="account">
+                        </a>
+                        <a href="#">
+                            <img class="px-1" src="images/accountbars.png" alt="account">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- bottomnavbar sm screens -->
+    <div class="bottom-nav fixed-bottom d-md-none">
+        <div class="d-flex align-items-center p-2  bg-white mx-2 justify-content-around rounded-pill border shadow">
+            <a href="explore.html"
+                class="active text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                <img width="24px" height="24px" src="images/explore.png" alt="explore">
+                <span href="#" class="mt-2">Explore </span>
+            </a>
+            <a href="hotel.html"
+                class="text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                <img width="24px" height="24px" src="images/hotels.png" alt="hotels">
+                <span href="#" class="mt-2">Hotels </span>
+            </a>
+            <a href="#" class="text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                <img width="24px" height="24px" src="images/tips.png" alt="tips">
+                <span href="#" class="mt-2">Trips </span>
+            </a>
+            <a href="#" class="text-decoration-none d-flex flex-column justify-content-center align-items-center">
+                <img width="24px" height="24px" src="images/profile.png" alt="profile">
+                <span href="#" class="mt-2">Profile </span>
+            </a>
+        </div>
+    </div>
+    <!-- end header  -->
+    <!-- main page start -->
+    <main class="main pt-5">
+        <div class="container">
+            <div class="row">
+
+                <section class="col-lg-6 pt-5">
+                    <div class="me-lg-4">
+                        <div class="">
+                            <span class="text-main fs-18">300+ Things to do</span>
+                            <h3 class="d-flex justify-content-between align-items-center">
+                                <span class="fs-30 mb-4">Things to do in London</span>
+                                <span class="d-flex align-items-center mb-3">
+                                    <a href="#"><img src="images/logout.png" class=" me-3" alt="logout"></a>
+                                    <a href="#"><img src="images/upload.png" alt="logout"></a>
+                            </h3>
+                            <div class="row m-0  flex-nowrap">
+                                <div class="col-12">
+                                    <div class="ms-2 container ps-4">
+                                        <section class="m-0 logo-carousel slider" data-arrows="true">
+                                            <div class="slide">
+                                                <div class="circle-search rounded-circle px-0"><a href="#"> <i
+                                                            class="fas fa-search  "></i> </a></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="circle-search activ"><a href="#"> Must See </a></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="circle-search"><a href="#"> Park </a></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="circle-search"><a href="#"> Restuarents </a></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="circle-search"><a href="#"> Hotels </a></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="circle-search"><a href="#"> Park </a></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="circle-search"><a href="#"> Restuarents </a></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="circle-search"><a href="#"> Hotels </a></div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- start Nearby Attractions  -->
+                            <div class="attractions pb-4 pt-5 ">
+
+                                <div class="things-todo">
+
+                                    <div class="row mb-5">
+
+
+                                        <div class="col-sm-12">
+                                            <div class="">
+                                                <div class="img-box position-relative">
+
+                                                    <img src="images/park.jpg" class="w-100 b-20" alt="hol2">
+                                                </div>
+                                                <div class="mt-3">
+                                                    <span class="text-main fs-sm-12">
+                                                        park
+                                                    </span>
+
+                                                </div>
+                                                <div class="pull-right"></div>
+                                                <h6 class="fs-18 mb-1 fs-sm-16 title">Pembrokshire Coast
+                                                    <div class="whislist">
+                                                        <i class="fas fa-heart text-main me-2"></i><span
+                                                            class="fw-bold fs-18">100%</span>
+                                                    </div>
+                                                </h6>
+                                                <span class="fs-sm-14">
+                                                    Trafalgar Square, London
+                                                </span>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="text-secondary fs-sm-14"><i
+                                                            class="far fa-clock    "></i>
+                                                        5:00 AM
+                                                        - 12:00 AM </div>
+                                                    <span class="text-main mx-2 "> Open Now</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mobile">
+
+
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="">
+                                                <div class="img-box position-relative">
+
+                                                    <img src="images/park.jpg" class="w-100 b-20" alt="hol2">
+                                                </div>
+                                                <div class="mt-3">
+                                                    <span class="text-main fs-sm-12">
+                                                        park
+                                                    </span>
+
+                                                </div>
+                                                <h6 class="fs-18 mb-1">Londonderry
+
+                                                    <div class="whislistlist">
+                                                        <i class="fas fa-heart text-main me-2"></i><span
+                                                            class="fw-bold fs-18">98%</span>
+                                                    </div>
+
+                                                </h6>
+                                                <span class="fs-sm-14">
+                                                    Trafalgar Square, London
+                                                </span>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="text-secondary"><i class="far fa-clock    "></i>
+                                                        5:00 AM
+                                                        - 12:00 AM</div>
+                                                    <span class="text-main fs-sm-12">Open Now</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="">
+                                                <div class="img-box position-relative">
+
+                                                    <img src="images/park.jpg" class="w-100 b-20" alt="hol2">
+                                                </div>
+                                                <div class="mt-3">
+
+                                                    <span class="text-secondary fs-sm-12">
+                                                        Bus
+                                                    </span>
+
+
+                                                </div>
+                                                <h6 class="fs-18 mb-1">Londonderry
+
+                                                    <div class="whislistlist">
+                                                        <i class="fas fa-heart text-main me-2"></i>
+                                                        <span class="fw-bold fs-18"> 98% </span>
+                                                    </div>
+
+                                                </h6>
+                                                <span class="fs-sm-14">
+                                                    Trafalgar Square, London
+                                                </span>
+                                                <div class="align-items-center">
+                                                    <p class="fs-sm-14"> Bus Tours & Travels
+                                                        <span class="price">39$</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mobile">
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="">
+                                                <div class="img-box position-relative">
+
+                                                    <img src="images/33.png" class="w-100 b-20" alt="hol2">
+                                                </div>
+                                                <div class="mt-3">
+                                                    <span class="text-main fs-sm-12">
+                                                        park
+                                                    </span>
+
+                                                </div>
+                                                <h6 class="fs-18 mb-1">Londonderry
+
+                                                    <div class="whislistlist">
+                                                        <i class="fas fa-heart text-main me-2"></i><span
+                                                            class="fw-bold fs-18">98%</span>
+                                                    </div>
+
+                                                </h6>
+                                                <span class="fs-sm-14">
+                                                    Trafalgar Square, London
+                                                </span>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="text-secondary"><i class="far fa-clock    "></i>
+                                                        5:00 AM
+                                                        - 12:00 AM</div>
+                                                    <span class="text-main fs-sm-12">Open Now</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="">
+                                                <div class="img-box position-relative">
+
+                                                    <img src="images/33.png" class="w-100 b-20" alt="hol2">
+                                                </div>
+                                                <div class="mt-3">
+
+                                                    <span class="text-secondary fs-sm-12">
+                                                        Bus
+                                                    </span>
+
+
+                                                </div>
+                                                <h6 class="fs-18 mb-1">Londonderry
+
+                                                    <div class="whislistlist">
+                                                        <i class="fas fa-heart text-main me-2"></i>
+                                                        <span class="fw-bold fs-18"> 98% </span>
+                                                    </div>
+
+                                                </h6>
+                                                <span class="fs-sm-14">
+                                                    Trafalgar Square, London
+                                                </span>
+                                                <div class="align-items-center">
+                                                    <p class="fs-sm-14"> Bus Tours & Travels
+                                                        <span class="price">39$</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end Nearby Attractions  -->
+
+                        </div>
+                    </div>
+                </section>
+                <aside class="col-lg-6">
+                    <div class="where-be ">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14024.644288224252!2d77.29797765!3d28.50480125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1646832732466!5m2!1sen!2sin"
+                            width="100%" height="733" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </aside>
+                <!-- start Frequently Asked Questions about Tate Modern  -->
+
+            </div>
+        </div>
+        <div class="white">
+            <div class="container">
+                <div class="asked-questions py-4 border-top">
+                    <h5 class="mb-3 heading fs-26 ">Frequently Asked Questions about Tate Modern
+                    </h5>
+
+                    <div class="question py-3">
+                        <h6 class="fs-18">Which popular attractions are close to Tate
+                            Modern?</h6>
+                        <p class="mb-0">Nearby attractions include Pacific Art (0.4 km), Lake
+                            Pichola (0.2
+                            km), and City Palace of Udaipur (0.4 km).</p>
+                        <a href="#" class="text-dark">See all nearby attractions.</a>
+                    </div>
+                    <div class="question py-3">
+                        <h6 class="fs-18">What are some of the property amenities at Tate
+                            Modern?
+                        </h6>
+                        <p class="mb-0">Nearby attractions include Pacific Art (0.4 km), Lake
+                            Pichola (0.2
+                            km), and City Palace of Udaipur (0.4 km).</p>
+                        <a href="#" class="text-dark">See all nearby attractions.</a>
+                    </div>
+                    <div class="question py-3">
+                        <h6 class="fs-18">What are some restaurants close to Tate Modern?
+                        </h6>
+                        <p class="mb-0">Conveniently located restaurants include Restaurant
+                            Harigarh,
+                            Jaiwana Haveli Roof Top Restaurant, and Dining Room.</p>
+                        <a href="#" class="text-dark">See all nearby restaurants.</a>
+                    </div>
+                    <div class="question py-3">
+                        <h6 class="fs-18">Does Tate Modern have airport transportation?</h6>
+                        <p class="mb-0">Yes, Taj Lake Palace offers airport transportation for
+                            guests. We
+                            recommend calling ahead to confirm details.</p>
+                        <a href="#" class="text-dark">Learn more.</a>
+                    </div>
+                    <div class="question py-3">
+                        <h6 class="fs-18">Does Tate Modern offer any business services?</h6>
+                        <p class="mb-0">Yes, it conveniently offers a business centre, meeting
+                            rooms, and a
+                            banquet room.</p>
+                        <a href="#" class="text-dark">See all property amenities.</a>
+                    </div>
+                </div>
+
+
+                <!-- end Frequently Asked Questions about Tate Modern  -->
+                <div class="border-top pb-5">
+                    <div class="py-4">
+                        <h6 class="fs-22 mb-2"> Related to Tate Modern </h6>
+                        <p class="mb-0 text-secondary">Restaurants in Goa, Goa Restaurants, Panaji
+                            restaurants, Best Panaji restaurants, North Goa restaurants, Café in Goa, Café
+                            near me, Café in North Goa, Café in Panaji, Bakery in Goa, Bakery near me,
+                            Bakery in North Goa, Bakery in Panaji, Cremeux Cafe & Bistro Menu, Order food
+                            online in Panaji, Order food online in Goa, Order food online in North Goa</p>
+                    </div>
+                    <div class="py-4">
+                        <h6 class="fs-22 mb-2">Hotels around Tate Modern </h6>
+                        <p class="mb-0 text-secondary">Bell Street restaurants, Fleet Street restaurants,
+                            Coin Street restaurants, Stamford Street restaurants, Porter Street restaurants,
+                            Chancery Lane restaurants, Blackfriars Bridge restaurants, Roupell Street
+                            restaurants, Southwark restaurants, Waterloo restaurants, Aldwych restaurants,
+                            Strand restaurants</p>
+                    </div>
+                    <div class="pt-4">
+                        <h6 class="fs-22 mb-2"> Frequent searches leading to this page</h6>
+                        <p class="mb-0 text-secondary">tate modern restaurant, zomato tate londom, tate
+                            modern café london, tate modern restaurant menu, tate modern afternoon tea
+                            restaurant menu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main page end  -->
+    <!-- start footer  -->
+    <footer class="bg-e">
+        <div class="container pt-5">
+            <div class="row ">
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold">Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Help Center</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Safety Information</a>
+                        </li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Cancellation
+                                Option</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Supporting People With
+                                disabilities</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold">Community</h6>
+                    <ul class="list-unstyled">
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Tripalong: disaster
+                                relief housing</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Support Afghan
+                                refuges</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Combating
+                                discrimination</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold">About</h6>
+                    <ul class="list-unstyled">
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Learn about new
+                                features</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#"> letter from our
+                                founders</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Careers</a></li>
+                        <li class="py-1"><a class="text-decoration-none text-dark" href="#">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h6 class="fw-bold">Follow Us</h6>
+                    <div class="d-flex py-2">
+                        <a aria-label="faceboock" class="text-decoration-none text-dark" href="#">
+                            <i class="fab fa-facebook-f fa-lg me-4"></i>
+                        </a>
+                        <a aria-label="Twitter" class="text-decoration-none text-dark" href="#">
+                            <i class="fab fa-twitter fa-lg me-4"></i>
+                        </a>
+                        <a aria-label="instagram" class="text-decoration-none text-dark" href="#">
+                            <i class="fab fa-instagram fa-lg me-4"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row copyrights small border-top">
+                <div class="py-3 d-flex align-items-center">
+                    <span class="">&copy;2022 Tripalong.</span>
+                    <div class="text-capitalize">
+                        <a class="text-dark text-decoration-none mx-2" href="#">Privacy</a>.
+                        <a class="text-dark text-decoration-none mx-2" href="#">terms</a>.
+                        <a class="text-dark text-decoration-none mx-2" href="#">sitemap</a>.
+                        <a class="text-dark text-decoration-none mx-2" href="#">company details</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
